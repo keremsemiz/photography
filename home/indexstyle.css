@@ -109,3 +109,177 @@ body{
     position: relative;
     top: 20rem;
 }
+
+/*********************************************** ALBUM-SLIDER ***********************************************/
+.album-slider{
+    height: 80vh;
+    background-color: black;
+    margin: auto;
+}
+#image-track .photo-1 {
+    width: 60vmin;
+    height: 60vmin;
+    position: relative;
+}
+.gallery__title{
+    font-size: 2rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+.gallery__subtitle{
+    font-size: 0.8rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+#image-track .photo-1 img {
+    width: 100%;
+    height: 40vmin;
+    object-fit: cover;
+}
+.photo-content-gallery{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 60%;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.photo-content-gallery:hover{
+    opacity: 1;
+}
+/*********************************************** IMAGE-SHOWCASE ***********************************************/
+.image-showcase{
+    height: fit-content;
+    background-color: black;
+    max-width: 1224px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+.image-showcase__title{
+    font-size: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+}
+.photo-gallery{
+    display: flex;
+    gap: 20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.photo{
+    position: relative;
+}
+.photo-content{
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+}
+.photo-content:hover{
+    opacity: 1;
+}
+.photo-content h1{
+    font-size: 1rem;
+}
+.photo-content p{
+text-align: center;
+}
+@media(max-width: 768px){
+    .photo-gallery{
+        flex-direction: column;
+    }
+}
+/*********************************************** NAVBUTTON ***********************************************/
+
+.popup-navbar a {
+    display: flex;
+    align-items: center;
+    padding: 10px 5px;
+    color: white;
+}
+.popup-navbar {
+    width: 200px;
+    padding-top: 50px;
+}
+.navbutton {
+    margin-right: 10rem;
+    margin-top: 3rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.navbutton div{
+    width: 30px;
+    height: 20px;
+    margin: 5px;
+    position: relative;
+}
+
+.navbutton span{
+    background: #fff;
+    width: 80%;
+    height: 2px;
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+}
+
+.navbutton .line-1, .navbutton .line-3 {
+    transform: translate(-50%, -10px);
+}
+
+.navbutton .line-3{
+    transform: translate(-50%, 10px);
+}
+
+.openmenu .line-1{
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.openmenu .line-3{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.openmenu .line-2{
+    width: 0;
+}
+/*********************************************** MEDIA QUERIES ***********************************************/
+
+
+
+
