@@ -13,7 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/logowhite.png" type="image/iconX">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
+    <link rel="icon" href="logos/KS_circle_NOBG.png" type="image/iconX">
 </head>
     <body class="container">
         <section class="start__area" id="start__area">
@@ -30,7 +31,8 @@
                     <div id="popupNavbar" class="popup-navbar" style="display: none;">
                         <a href="#start__area">Home</a>
                         <a href="#albums-section">Albums</a>
-                        <a href="#image-showcase">Recent Photos</a>
+                        <a href="#image-showcase">Photos</a>
+                        <a href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -40,7 +42,57 @@
                 <h1 class="header__text3">I take photos</h1>
             </div>
         </section>
-
+        <section class="album-slider" id="albums-section">
+            <div class="gallery__title">
+                <h1>Albums</h1>
+            </div>
+            <div class="gallery__subtitle">
+            </div>
+            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+               <div class="photo-1">
+                    <a class="image" href=""><img class="image" src="images/mountainroad_iceland.JPEG" draggable="false"></a>
+                    <div class="photo-content-gallery">
+                        <h1>Otherworldly Iceland</h1>
+                        <p>Landscapes from Iceland</p>
+                    </div>
+                </div>
+               <div class="photo-1">
+                    <a class="image" href=""><img class="image" src="images/jma_el_fnaa.JPEG" draggable="false"></a>
+                    <div class="photo-content-gallery">
+                        <h1>Oriental Morocco</h1>
+                        <p>Cityscapes from Morocco</p>
+                    </div>
+                </div>
+               <div class="photo-1">
+                    <a class="image" href=""><img class="image" src="images/surf_usa.JPEG" draggable="false"></a>
+                    <div class="photo-content-gallery">
+                        <h1>Unique West Coast</h1>
+                        <p>Photos from California</p>
+                    </div>
+                </div>
+                <div class="photo-1">
+                    <a class="image" href=""><img class="image" src="images/caen_cathedral_rouen.jpg" draggable="false"></a>
+                    <div class="photo-content-gallery">
+                        <h1>Elegant France</h1>
+                        <p>Landscapes from France</p>
+                    </div>
+                </div>
+               <div class="photo-1">
+                    <a class="image" href=""><img class="image" src="images/finland_lake.JPG" draggable="false"></a>
+                    <div class="photo-content-gallery">
+                        <h1>Sisters Estonia & Finland</h1>
+                        <p>Photos from Estionia & Finland</p>
+                    </div>
+                </div>
+               <div class="photo-1">
+                    <a class="image" href=""><img class="image" src="images/ubahn_snow.jpg" draggable="false"></a>
+                    <div class="photo-content-gallery">
+                        <h1>Bustling Berlin</h1>
+                        <p>Cityscapes from Berlin</p>
+                    </div>
+                </div>
+            </div>
+        </section>
         
         
         <div class="image-showcase" id="image-showcase">
@@ -186,6 +238,45 @@
                 </div>
             </div>
         </div>
+
+        <footer id="contact" class="footer">
+            <div class="footer-container">
+                <div class="footer-branding">
+                    <h1 className='archivo'>KS Photography <sup>®</sup></h1>
+                    <br>
+                    <button class="get-started-button">Reach out →</button>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h2 className='archivo'>Me</h2>
+                        <a href="#">Equipment</a>
+                        <a href="#">Travel</a>
+                        <a href="#">About</a>
+
+                    </div>
+                    <div class="footer-column">
+                        <h2 className='archivo'>Resources</h2>
+                        <a href="#">Advertise</a>
+                        <a href="#">Partners</a>
+                        <a href="#">Affiliate</a>
+
+                    </div>
+                    <div class="footer-column">
+                        <h2 className='archivo'>Connect</h2>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter (X)</a>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Copyright © 2024 Kerem Semiz</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
 
 
         
