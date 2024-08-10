@@ -1,0 +1,111 @@
+body{
+    font-family: "Playfair Display", sans-serif;
+    line-height: 1.7;
+    color: white;
+    overflow-x: hidden;
+}
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    --bg: black;
+    
+    --blue1: #0466c8;
+    --blue2: #0353a4;
+    --blue3: #023e7d;
+    --blue4: #002855;
+    --blue5: #001845;
+    --blue6: #001233;
+
+    --grey1: #33415c;
+    --grey2: #5c677d;
+    --grey3: #7d8597;
+    --grey4: #979dac;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+.start__area{
+    height: 120vh;
+    background-image: url('images/sunset_marrakech.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: -10rem;
+    margin-right: -10rem;
+    overflow-x: hidden;
+}
+.container{
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: black;
+}
+.header__menu{
+    color: white;
+    z-index: 6; 
+    align-items: flex-end;
+    padding-bottom: 10px;
+    display: flex;
+    position: fixed;
+    padding-top: 2rem;
+    bottom: auto;
+    left: 0%;
+    right: 0%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+.header__menu_link{
+    flex: 1;
+    justify-content: right;
+    align-items: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+.header__menu_link2{
+    flex: 1;
+    justify-content: left;
+    align-items: left;
+    margin: 5px 5px 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+.header__menu_link a:first-child {
+    margin-right: 80px;
+}
+
+#a{
+    color: white;
+}
+
+/*********************************************** HEADER ***********************************************/
+.header{
+    margin-left: 10rem;
+}
+.header__text{
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    top: 20rem;
+}
+.header__text2{
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    top: 20rem;
+}
+.header__text3{
+    font-size: 5rem;
+    color: white;
+    position: relative;
+    top: 20rem;
+}
