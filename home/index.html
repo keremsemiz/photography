@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerem's Photography</title>
+</head>
+    <body class="container">
+        <section class="start__area" id="start__area">
+            <div class="header__menu" id="navbar">
+                <div class="header__menu_link2">
+                    <a id="a" href=""><h2>KS</h2></a>
+                </div>
+                <div id="navbutton" class="navbutton">
+                    <div>
+                        <span class="line-1"></span>
+                        <span class="line-2"></span>
+                        <span class="line-3"></span>
+                    </div>
+                    <div id="popupNavbar" class="popup-navbar" style="display: none;">
+                        <a href="#start__area">Home</a>
+                        <a href="#albums-section">Albums</a>
+                        <a href="#image-showcase">Recent Photos</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header">
+                <h1 class="header__text">Hello,</h1>
+                <h1 class="header__text2">I'm Kerem and</h1>
+                <h1 class="header__text3">I take photos</h1>
+            </div>
+        </section>
+
+        
+        <div class="image-showcase" id="image-showcase">
+            <h1 class="image-showcase__title">Recent Photos</h1>
+            <div class="photo-gallery">
+                <div class="column">
+                    <div class="photo">
+                        <img src="images/camel_agafay.JPEG" alt="">
+                        <div class="photo-content">
+                           <h1>Camels at Agafay, Morocco</h1>
+                           <p>Camels on the hills of the Agafay Desert</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="images/jma_el_fnaa.JPEG" alt="">
+                        <div class="photo-content">
+                            <h1>Jemaa el-Fna Square at Sunset</h1>
+                            <p>The hub of attractions in Marrakesh, the Jemaa el-Fna Square, gets very crowded at sunset.</p>
+                         </div>
+                    </div>
+                    <div class="photo">
+                        <img src="images/facade_ben_youssef.JPEG" alt="">
+                        <div class="photo-content">
+                            <h1>Façade of the Madrasa Ben Youssef</h1>
+                            <p>The beautiful facade of the 16th-century college building, Madrasa Ben Youssef.</p>
+                         </div>
+                    </div>
+                    <div class="photo">
+                        <img src="images/jma_el_fnaa_flag.JPEG" alt="">
+                        <div class="photo-content">
+                            <h1>The Musée du Patrimoine Immatériel</h1>
+                            <p>The Flag of Morocco flying high at sunset near the Musée du Patrimoine Immatériel in Marrakesh.  </p>
+                         </div>
+                    </div>
+                    <div class="photo">
+                        <img src="images/marrakech_men.JPEG" alt="">
+                        <div class="photo-content">
+                            <h1>Daily Life in Marrakesh</h1>
+                            <p>Locals in Marrakech setting up their food stands for the start of the day.</p>
+                         </div>
+                    </div>
+                    <div class="photo">
+                        <img src="images/koutoubia_repairs.JPEG" alt="">
+                        <div class="photo-content">
+                            <h1>The 12th Century Koutoubia</h1>
+                            <p>The damaged Koutoubia mosque at sunset with repairs due to the earthquake.</p>
+                         </div>
+                    </div>
+                    <div class="photo">
+                        <img src="images/engraving_ben_youssef.JPEG" alt="">
+                        <div class="photo-content">
+                            <h1>Engravings from the 16th century</h1>
+                            <p>The intricate details and shapes inside the Madrasa Ben Youssef in Marrakesh.</p>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+    </body>
+    <script>
+        var menu = document.getElementById("navbutton");
+
+        menu.onclick = function(){
+            menu.classList.toggle("openmenu");
+        }
+    </script>
+    <script src="/home/navigation.js"></script>
+    <script src="/home/slider.js"></script>
+</html>
