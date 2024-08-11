@@ -1,26 +1,42 @@
-body{
+:root {
+    --bg: black;
+    --blue1: #0466c8;
+    --blue2: #0353a4;
+    --blue3: #023e7d;
+    --blue4: #002855;
+    --blue5: #001845;
+    --blue6: #001233;
+
+    --grey1: #33415c;
+    --grey2: #5c677d;
+    --grey3: #7d8597;
+    --grey4: #979dac;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body {
     font-family: "Playfair Display", sans-serif;
     line-height: 1.7;
     color: white;
+    background-color: var(--bg);
     overflow-x: hidden;
-}
-* {
-    padding: 0;
     margin: 0;
-    text-decoration: none;
-    outline: 0;
-    list-style: none;
-    box-sizing: border-box;
+    padding: 0;
 }
 
 .container {
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 2rem 0;
-    background-color: black;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: var(--bg);
+    padding-top: 6rem;
 }
 
-.header__menu {
+.header__menu{
     color: white;
     z-index: 6; 
     align-items: flex-end;
@@ -29,16 +45,31 @@ body{
     position: fixed;
     padding-top: 2rem;
     bottom: auto;
-    left: 0;
-    right: 0;
-    margin-left: var(--container-width-lg);
-    margin-right: var(--container-width-lg);
-    background: var(--bg);
+    left: 0%;
+    right: 0%;
+    margin-left: 10rem;
+    margin-right: 10rem;
 }
-
-.header__menu_link2 h2 {
-    font-size: 2rem;
+.header__menu_link{
+    flex: 1;
+    justify-content: right;
+    align-items: right;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
 }
+.header__menu_link2{
+    flex: 1;
+    justify-content: left;
+    align-items: left;
+    margin: 5px 5px 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+}
+.header__menu_link a:first-child {
+    margin-right: 80px;
+}}
 
 .navbutton {
     cursor: pointer;
@@ -85,17 +116,16 @@ body{
 }
 
 .page-title {
-    text-align: center;
     font-size: 4rem;
     color: var(--blue1);
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .equipment-item {
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
-    background: var(--grey1);
+    background: var(--blue5);
     border-radius: 10px;
     overflow: hidden;
 }
@@ -131,10 +161,14 @@ body{
 .equipment-img img {
     width: 100%;
     height: auto;
-    border-radius: 0;
 }
 
 @media (max-width: 768px) {
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
     .equipment-item {
         flex-direction: column;
     }
