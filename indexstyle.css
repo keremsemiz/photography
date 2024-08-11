@@ -379,3 +379,160 @@ text-align: center;
 .archivo{
     font-family: 'Archivo'
 }
+
+/*********************************************** MEDIA QUERIES ***********************************************/
+
+@media (max-width: 575.98px) {
+    .header__text, .header__text2, .header__text3 {
+        font-size: 2rem;
+        top: 10rem;
+    }
+
+    .header__menu {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .start__area {
+        margin-left: -2rem;
+        margin-right: -2rem;
+    }
+
+    .navbutton {
+        margin-right: 1rem;
+    }
+
+    .footer {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .header__text, .header__text2, .header__text3 {
+        font-size: 3rem;
+        top: 15rem;
+    }
+
+    .header__menu {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .start__area {
+        margin-left: -4rem;
+        margin-right: -4rem;
+    }
+
+    .navbutton {
+        margin-right: 2rem;
+    }
+
+    .footer {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header__text, .header__text2, .header__text3 {
+        font-size: 4rem;
+        top: 17rem;
+    }
+
+    .header__menu {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .container {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .start__area {
+        margin-left: -6rem;
+        margin-right: -6rem;
+    }
+
+    .navbutton {
+        margin-right: 4rem;
+    }
+
+    .footer {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header__text, .header__text2, .header__text3 {
+        font-size: 4.5rem;
+        top: 18rem;
+    }
+
+    .header__menu {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .container {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+
+    .start__area {
+        margin-left: -8rem;
+        margin-right: -8rem;
+    }
+
+    .navbutton {
+        margin-right: 6rem;
+    }
+
+    .footer {
+        margin-left: 6rem;
+        margin-right: 6rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .header__text, .header__text2, .header__text3 {
+        font-size: 5rem;
+        top: 20rem;
+    }
+
+    .header__menu {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .container {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+
+    .start__area {
+        margin-left: -10rem;
+        margin-right: -10rem;
+    }
+
+    .navbutton {
+        margin-right: 10rem;
+    }
+
+    .footer {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
