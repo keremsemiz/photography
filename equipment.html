@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Equipment - Canon EOS R</title>
+    <link rel="stylesheet" href="equipment.css">
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header__menu" id="navbar">
+            <div class="header__menu_link2">
+                <a id="a" href=""><h2>KS</h2></a>
+            </div>
+            <div id="navbutton" class="navbutton">
+                <div>
+                    <span class="line-1"></span>
+                    <span class="line-2"></span>
+                    <span class="line-3"></span>    
+                </div>
+                <div id="popupNavbar" class="popup-navbar" style="display: none;">
+                    <a href="index.html">Home</a>
+                    <a href="albums.html">Albums</a>
+                    <a href="photos.html">Photos</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="page-title">My Equipment</h1>
+
+        <div class="equipment-item">
+            <div class="equipment-text">
+                <h2>Canon EOS R</h2>
+                <p>
+                    The Canon EOS R is my go-to camera for capturing stunning visuals. Its full-frame sensor and excellent ergonomics make it ideal for both photography and videography. The camera's design is well thought out, providing great handling and intuitive controls.
+                </p>
+            </div>
+            <div class="equipment-img">
+                <img src="https://i1.adis.ws/i/canon/07_eos_r-handling-and-design-showing-the-ergonomics_109086070342515_3454219ca0584270a80140ffae466305?$hero-header-full-16by9-dt$" alt="Canon EOS R Ergonomics">
+            </div>
+        </div>
+
+        <div class="equipment-item">
+            <div class="equipment-text">
+                <h2>Full-Frame Sensor</h2>
+                <p>
+                    The EOS R is equipped with a 30.3 MP full-frame CMOS sensor that delivers incredible image quality with rich detail and vibrant colors. Whether I'm shooting landscapes or portraits, the sensor ensures that every shot is sharp and lifelike.
+                </p>
+            </div>
+            <div class="equipment-img">
+                <img src="https://i1.adis.ws/i/canon/05_eos_r_sensor_v2_291081985908932_0e9623c585c74051b9cb4003b723a46e?$hero-header-full-16by9-dt$" alt="Canon EOS R Sensor">
+            </div>
+        </div>
+
+        <div class="equipment-item">
+            <div class="equipment-text">
+                <h2>Lens Compatibility</h2>
+                <p>
+                    One of the key strengths of the Canon EOS R system is its compatibility with a wide range of high-quality RF lenses. Whether I need a lens for wide-angle landscapes or close-up portraits, the EOS R system has me covered.
+                </p>
+            </div>
+            <div class="equipment-img">
+                <img src="https://i1.adis.ws/i/canon/eos-r-bk-fsl_6b700b9ac47e423e9bf37e411c5fe7a1?$70-30-header-4by3-dt$" alt="Canon EOS R Lens Compatibility">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menu = document.getElementById("navbutton");
+
+        menu.onclick = function(){
+            menu.classList.toggle("openmenu");
+            document.getElementById("popupNavbar").style.display = menu.classList.contains("openmenu") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
