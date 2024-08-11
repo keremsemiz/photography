@@ -536,3 +536,41 @@ text-align: center;
         margin-right: 10rem;
     }
 }
+
+@media (max-width: 768px) {
+    .photo-gallery {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .gallery__title {
+        font-size: 1.5rem;
+    }
+    .gallery__subtitle {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header__text, .header__text2, .header__text3 {
+        font-size: 3.5rem;
+        top: 15rem;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .footer-branding h1 {
+        font-size: 1.5rem;
+    }
+    .footer-branding p {
+        font-size: 1rem;
+    }
+    .get-started-button {
+        padding: 0.5rem 1rem;
+    }
+    .footer-column h2 {
+        font-size: 1rem;
+    }
+    .footer-column a {
+        font-size: 0.9rem;
+    }
+}
