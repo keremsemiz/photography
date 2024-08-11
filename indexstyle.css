@@ -381,17 +381,14 @@ text-align: center;
 }
 
 /*********************************************** MEDIA QUERIES ***********************************************/
-
 @media (max-width: 575.98px) {
     .header__text, .header__text2, .header__text3 {
         font-size: 2.5rem;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 10rem;
+        padding: 1rem;
         text-align: center;
-        padding: 0 1rem; 
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        transform: none;
         width: 100%;
     }
 
@@ -473,13 +470,11 @@ text-align: center;
 @media (min-width: 576px) and (max-width: 767.98px) {
     .header__text, .header__text2, .header__text3 {
         font-size: 3rem;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 15rem;
+        padding: 1rem;
         text-align: center;
-        padding: 0 1rem;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        transform: none;
         width: 100%;
     }
 
@@ -527,13 +522,11 @@ text-align: center;
 @media (min-width: 768px) and (max-width: 991.98px) {
     .header__text, .header__text2, .header__text3 {
         font-size: 3.5rem;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 17rem;
+        padding: 1rem;
         text-align: center;
-        padding: 0 2rem;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        transform: none;
         width: 100%;
     }
 
@@ -575,16 +568,15 @@ text-align: center;
     }
 }
 
+
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .header__text, .header__text2, .header__text3 {
         font-size: 4rem;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 20rem;
+        padding: 1rem;
         text-align: center;
-        padding: 0 2rem;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        transform: none;
         width: 100%;
     }
 
@@ -616,16 +608,15 @@ text-align: center;
     }
 }
 
+
 @media (min-width: 1200px) {
     .header__text, .header__text2, .header__text3 {
         font-size: 5rem;
-        top: 50%;
-        transform: translateY(-50%);
+        top: 20rem;
+        padding: 1rem;
         text-align: center;
-        padding: 0 2rem;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        position: relative;
+        transform: none;
         width: 100%;
     }
 
@@ -668,5 +659,42 @@ text-align: center;
     }
     .gallery__subtitle {
         font-size: 0.7rem;
+    }
+}
+
+/*********************************************** ALBUM SLIDER ***********************************************/
+@media (max-width: 575.98px) {
+    #image-track {
+        gap: 2vmin;
+        top: 150%;
+        left: 2%;
+    }
+    #image-track > .image {
+        width: 50vmin;
+        height: 70vmin;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    #image-track {
+        gap: 3vmin;
+        top: 160%;
+        left: 3%;
+    }
+    #image-track > .image {
+        width: 45vmin;
+        height: 65vmin;
+    }
+}
+
+@media (min-width: 992px) {
+    #image-track {
+        gap: 4vmin;
+        top: 180%;
+        left: 5%;
+    }
+    #image-track > .image {
+        width: 40vmin;
+        height: 60vmin;
     }
 }
