@@ -385,10 +385,11 @@ text-align: center;
     .header__text, .header__text2, .header__text3 {
         font-size: 2.5rem;
         top: 10rem;
-        padding: 1rem;
+        padding: 0;
         text-align: center;
-        position: relative;
-        transform: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100%;
     }
 
@@ -403,8 +404,8 @@ text-align: center;
     .container {
         margin-left: 0;
         margin-right: 0;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .start__area {
@@ -471,10 +472,11 @@ text-align: center;
     .header__text, .header__text2, .header__text3 {
         font-size: 3rem;
         top: 15rem;
-        padding: 1rem;
+        padding: 0;
         text-align: center;
-        position: relative;
-        transform: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100%;
     }
 
@@ -487,8 +489,10 @@ text-align: center;
     }
 
     .container {
-        margin-left: 1rem;
-        margin-right: 1rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .start__area {
@@ -523,10 +527,11 @@ text-align: center;
     .header__text, .header__text2, .header__text3 {
         font-size: 3.5rem;
         top: 17rem;
-        padding: 1rem;
+        padding: 0;
         text-align: center;
-        position: relative;
-        transform: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         width: 100%;
     }
 
@@ -536,8 +541,10 @@ text-align: center;
     }
 
     .container {
-        margin-left: 2rem;
-        margin-right: 2rem;
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .start__area {
@@ -568,16 +575,15 @@ text-align: center;
     }
 }
 
-
 @media (min-width: 992px) and (max-width: 1199.98px) {
     .header__text, .header__text2, .header__text3 {
         font-size: 4rem;
         top: 20rem;
         padding: 1rem;
-        text-align: center;
+        text-align: left;
         position: relative;
         transform: none;
-        width: 100%;
+        width: auto;
     }
 
     .header__menu {
@@ -608,16 +614,15 @@ text-align: center;
     }
 }
 
-
 @media (min-width: 1200px) {
     .header__text, .header__text2, .header__text3 {
         font-size: 5rem;
         top: 20rem;
         padding: 1rem;
-        text-align: center;
+        text-align: left;
         position: relative;
         transform: none;
-        width: 100%;
+        width: auto;
     }
 
     .header__menu {
