@@ -20,7 +20,7 @@
 }
 
 body {
-    font-family: "Playfair Display", sans-serif;
+    font-family: "Archivo", sans-serif;
     line-height: 1.7;
     color: white;
     background-color: var(--bg);
@@ -29,11 +29,10 @@ body {
     padding: 0;
 }
 
-.container {
+.container{
     margin-left: 10rem;
     margin-right: 10rem;
-    background-color: var(--bg);
-    padding-top: 6rem;
+    background-color: black;
 }
 
 .header__menu{
@@ -71,62 +70,25 @@ body {
     margin-right: 80px;
 }
 
-.navbutton {
-    cursor: pointer;
+#a{
+    color: white;
+}
+/*********************************************** NAVBUTTON ***********************************************/
+
+.content{
+    padding-top: 8rem;
 }
 
-.navbutton div {
-    width: 30px;
-    height: 20px;
-    margin: 5px;
-    position: relative;
-}
-
-.navbutton span {
-    background: #fff;
-    width: 80%;
-    height: 2px;
-    border-radius: 1px;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s, width 0.5s;
-}
-
-.navbutton .line-1, .navbutton .line-3 {
-    transform: translate(-50%, -10px);
-}
-
-.navbutton .line-3 {
-    transform: translate(-50%, 10px);
-}
-
-.openmenu .line-1 {
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-.openmenu .line-3 {
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.openmenu .line-2 {
-    width: 0;
-}
-
-.page-title {
-    font-size: 4rem;
-    color: var(--blue1);
-    margin-bottom: 4rem;
+.page-title{
+    font-size: 3rem;
 }
 
 .equipment-item {
     display: flex;
     align-items: center;
     margin-bottom: 4rem;
-    background: var(--blue5);
-    border-radius: 10px;
+
+    border-radius: 3rem;
     overflow: hidden;
 }
 
@@ -146,7 +108,7 @@ body {
 .equipment-text h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--blue1);
+    color: white;
 }
 
 .equipment-text p {
