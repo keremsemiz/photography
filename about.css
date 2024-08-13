@@ -48,6 +48,7 @@ body {
     right: 0%;
     margin-left: 10rem;
     margin-right: 10rem;
+    background-color: var(--bg);
 }
 
 .header__menu_link {
@@ -126,6 +127,7 @@ body {
 .equipment-img img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .footer {
