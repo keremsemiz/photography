@@ -4,65 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me - Kerem's Photography</title>
+    <link rel="stylesheet" href="aboutstyle.css">
     <link rel="stylesheet" href="indexstyle.css">
-    <link rel="stylesheet" href="sliderstyle.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
-    <link rel="icon" href="logos/KS_circle_NOBG.png" type="image/iconX">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="header__menu" id="navbar">
-            <div class="header__menu_link2">
-                <a id="a" href="index.html"><h2>KS</h2></a>
+    <header class="header__menu" id="navbar">
+        <div class="header__menu_link2">
+            <a id="a" href="index.html"><h2>KS</h2></a>
+        </div>
+        <div id="navbutton" class="navbutton">
+            <div>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>    
             </div>
-            <div id="navbutton" class="navbutton">
-                <div>
-                    <span class="line-1"></span>
-                    <span class="line-2"></span>
-                    <span class="line-3"></span>    
+            <div id="popupNavbar" class="popup-navbar" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="albums.html">Albums</a>
+                <a href="photos.html">Photos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>Hi, I'm Kerem, a passionate photographer with a love for capturing the beauty of the world around us. My journey into photography began at a young age, and it has been an incredible adventure ever since.</p>
+                <p>I specialize in landscape, portrait, and travel photography. Through my lens, I strive to tell stories and evoke emotions in every shot. Whether it's the serene landscapes of Iceland or the bustling streets of Morocco, I aim to capture moments that resonate with viewers.</p>
+                <p>My work is inspired by the natural world, the people I meet, and the places I visit. I believe that photography is not just about taking pictures, but about capturing the essence of a moment in time.</p>
+            </div>
+            <div class="about-image">
+                <img src="images/kerem_photo.jpg" alt="Kerem">
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <h1 class="archivo">KS Photography <sup>®</sup></h1>
+                <button class="get-started-button">Reach out →</button>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h2 class="archivo">Me</h2>
+                    <a href="#">Equipment</a>
+                    <a href="#">Travel</a>
+                    <a href="#">About</a>
                 </div>
-                <div id="popupNavbar" class="popup-navbar" style="display: none;">
-                    <a href="index.html">Home</a>
-                    <a href="albums.html">Albums</a>
-                    <a href="photos.html">Photos</a>
-                    <a href="contact.html">Contact</a>
+                <div class="footer-column">
+                    <h2 class="archivo">Resources</h2>
+                    <a href="#">Advertise</a>
+                    <a href="#">Partners</a>
+                    <a href="#">Affiliate</a>
+                </div>
+                <div class="footer-column">
+                    <h2 class="archivo">Connect</h2>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter (X)</a>
+                    <a href="#">LinkedIn</a>
                 </div>
             </div>
         </div>
-
-        <section class="about-section">
-            <h1 class="about-title">About Me</h1>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Hi, I'm Kerem, a passionate photographer with a love for capturing the world through my lens. 
-                        My journey in photography began when I first picked up a camera at a young age, and since then, 
-                        I’ve been captivated by the beauty of nature, people, and places.
-                    </p>
-                    <p>
-                        Over the years, I have traveled to various destinations, from the stunning landscapes of Iceland 
-                        to the vibrant streets of Morocco, capturing moments that tell a story. My work is a reflection 
-                        of my passion for exploration and my desire to share the beauty of the world with others.
-                    </p>
-                    <p>
-                        Whether it's the serene mountains, bustling cities, or quiet moments in nature, I strive to 
-                        create images that resonate with viewers and evoke emotion. Photography is not just a hobby 
-                        for me; it’s a way of life, a means to connect with the world and the people in it.
-                    </p>
-                </div>
-                <div class="about-image">
-                    <img src="images/about_me_photo.jpg" alt="Kerem's Photo">
-                </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Kerem Semiz</p>
+            <div class="footer-bottom-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
             </div>
-        </section>
-    </div>
+        </div>
+    </footer>
 
     <script>
         var menu = document.getElementById("navbutton");

@@ -1,0 +1,269 @@
+:root {
+    --bg: black;
+    --blue1: #0466c8;
+    --blue2: #0353a4;
+    --blue3: #023e7d;
+    --blue4: #002855;
+    --blue5: #001845;
+    --blue6: #001233;
+
+    --grey1: #33415c;
+    --grey2: #5c677d;
+    --grey3: #7d8597;
+    --grey4: #979dac;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: "Playfair Display", sans-serif;
+    line-height: 1.7;
+    color: white;
+    background-color: var(--bg);
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu {
+    color: white;
+    z-index: 6;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    display: flex;
+    position: fixed;
+    padding-top: 2rem;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background: var(--bg);
+}
+
+.navbutton {
+    cursor: pointer;
+}
+
+.navbutton div {
+    width: 30px;
+    height: 20px;
+    margin: 5px;
+    position: relative;
+}
+
+.navbutton span {
+    background: #fff;
+    width: 80%;
+    height: 2px;
+    border-radius: 1px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s, width 0.5s;
+}
+
+.navbutton .line-1, .navbutton .line-3 {
+    transform: translate(-50%, -10px);
+}
+
+.navbutton .line-3 {
+    transform: translate(-50%, 10px);
+}
+
+.openmenu .line-1 {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.openmenu .line-3 {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.openmenu .line-2 {
+    width: 0;
+}
+
+.about-section {
+    margin-top: 8rem;
+    padding: 4rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+.about-content {
+    flex: 1;
+    margin-right: 3rem;
+}
+
+.about-content h1 {
+    font-size: 3rem;
+    color: var(--blue1);
+    margin-bottom: 1.5rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: var(--grey4);
+    margin-bottom: 1rem;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.footer {
+    margin-left: 10rem;
+    margin-right: 10rem;
+    font-family: 'Archivo', sans-serif;
+    background-color: #1A1A1A;
+    color: #fff;
+    background-color: black;
+    padding: 2rem;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-wrap: wrap;
+}
+
+.footer-branding {
+    max-width: 30%;
+}
+
+.footer-branding h1 {
+    font-size: 2rem;
+}
+
+.footer-branding p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.get-started-button {
+    background-color: #57161F;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-column a {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-bottom-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-bottom-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+    .about-content {
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    .about-image {
+        text-align: center;
+    }
+
+    .header__menu {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .footer {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-branding, .footer-links, .footer-bottom {
+        max-width: 100%;
+    }
+}
