@@ -246,3 +246,47 @@ body {
 .footer-bottom-links a {
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+    .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    }
+    
+    css
+    Copy code
+    .contact-item {
+        flex-direction: column;
+    }
+    
+    .contact-text, .contact-form {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    .contact-text {
+        text-align: center;
+    }
+    
+    .header__menu {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .footer {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+    
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-branding, .footer-links, .footer-bottom {
+        max-width: 100%;
+    }
+}
