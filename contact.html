@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Kerem's Photography</title>
+    <link rel="stylesheet" href="contactstyle.css">
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header__menu" id="navbar">
+        <div class="header__menu_link2">
+            <a id="a" href="index.html"><h2>KS</h2></a>
+        </div>
+        <div id="navbutton" class="navbutton">
+            <div>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>    
+            </div>
+            <div id="popupNavbar" class="popup-navbar" style="display: none;">
+                <a href="index.html">Home</a>
+                <a href="albums.html">Albums</a>
+                <a href="photos.html">Photos</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container content">
+        <h1 class="page-title">Reach Out to Me</h1>
+        <div class="contact-item">
+            <div class="contact-text">
+                <h2>Get in Touch</h2>
+                <p>If you have any questions, collaboration ideas, or just want to say hello, feel free to reach out! I'm always open to discussing new projects, creative ideas, or opportunities to be a part of your vision.</p>
+            </div>
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+
+                    <button type="submit" class="submit-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-branding">
+                <h1 class="archivo">KS Photography <sup>®</sup></h1>
+                <button class="get-started-button">Reach out →</button>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h2 class="archivo">Me</h2>
+                    <a href="equipment.html">Equipment</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-column">
+                    <h2 class="archivo">Resources</h2>
+                    <a href="#">Advertise</a>
+                    <a href="#">Partners</a>
+                    <a href="#">Affiliate</a>
+                </div>
+                <div class="footer-column">
+                    <h2 class="archivo">Connect</h2>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter (X)</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 Kerem Semiz</p>
+            <div class="footer-bottom-links">
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var menu = document.getElementById("navbutton");
+
+        menu.onclick = function(){
+            menu.classList.toggle("openmenu");
+            document.getElementById("popupNavbar").style.display = menu.classList.contains("openmenu") ? "block" : "none";
+        }
+    </script>
+</body>
+</html>
