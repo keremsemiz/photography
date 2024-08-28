@@ -1,6 +1,9 @@
 # `KS Photography`
 
-Welcome to **`KS Photography`**, a personal website to showcase my photography. This site is built using only HTML and CSS, focusing on a clean and responsive design to beautifully present images.
+Welcome to **`KS Photography`**, a personal website to showcase my photography. This site is built using only HTML and CSS, focusing on a clean and 
+responsive design to beautifully present images.
+
+![home page demo](image.png)
 
 ## Features
 
